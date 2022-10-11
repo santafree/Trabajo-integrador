@@ -1,0 +1,107 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+.overlay{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+
+#menu-hamburgesa:checked {
+    display: none;
+}
+.navbar-list{
+    position: relative;
+    padding: 0;
+}
+.navbar-list li{
+    position: relative;
+    padding: 0;
+
+}
+.navbar-list li a::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: trasform 0.15s ease
+}
+.navbar-list li a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    @keyframes slide-up{
+        0%{
+            transform: translateY(100px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+
+        
+    }
+    @keyframes slide-right{
+        from{
+            transform: translateY(100px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .text h1{
+        animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+    }
+    .text p{
+        animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    }
+    #hero h1{
+        animation: fade 0.8s ease-in, slide-up 0.9s ease-in-out;
+    }
+    .info-benef{
+        animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+    }
+    .info-benef:nth-child(3){
+        animation-delay: 0.7s;
+    }
+    .info-benef:nth-child(2){
+        animation-delay: 1s;
+    }
+    .catalogo-indiv:hover {
+        transform: scale(1.04, 1.04);
+        transition: all 0.2s ease-in-out;
+    }
+    @keyframes blink{
+        to{
+            background: transparent;
+            opacity: 0;
+        }
+    }
+    @keyframes typewriter{
+        to{
+            left: 100%;
+        }
+    }

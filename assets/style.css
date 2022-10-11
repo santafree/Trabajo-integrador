@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto&display=swap');
+:root {
+    
+    --gray: #c5c3c2;
+    --header: rgb(128, 128, 128);
+        --background: #02050e;
+      --primary: #1e50ff;
+      --secondary: #272d37;
+      --btn-bg: #050d26;
+      --bg-azul-10: #e9eeff;
+      --bg-white: #fff;
+      --bg-electric: #f0fbff;
+      --nav-bg: #0f1525;
+      --text-white: #f3f4f6;
+    
+      --fire: #ff6d00;
+      --electric: #64d3ff;
+ 
+   
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+/*Login*/
+.login img{
+    width: 80px;
+    height: 80px;
+}
+.login{
+    background: var(--header);
+
+}
+#login{
+    background-color: white;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var;
+    padding: 50px;    
+     
+ }
+ .label label{
+     display: flex;
+     flex-direction: column;
+    
+ 
+     
+ }
+ .label input{
+     padding: 2px 2px 1px;
+     border-radius: 3px;
+     border-color:rgb(204, 77, 98);
+     margin-bottom: 10px;
+     margin-top: 5px;
+     border-width: 0 0 1px ;
+ 
+ 
+ }
+ .label button{
+     background-color: rgb(204, 77, 98);
+     border-radius: 60px;
+     height: 64px;
+     width: 200px;
+ }
+ .boton{
+     color: whitesmoke;
+     justify-content: center;
+ }
+ 
+ .cuenta{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ 
+     
+ }
+
+ .index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    background:var(--header);
+
+
+ }
+ .img-logo{
+    width: 120px;
+    height: 120px;
+    
+
+ }
+ .navbar,
+ .navbar-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .navbar{
+    gap: 150px;
+ }
+ .navbar-list{
+    gap: 30px;
+ }
+
+ .navbar-list a{
+    font-size: 14px;
+     color: var(--white);
+
+ }
+ .navbar-list li:first-child > a{
+    color: black;
+    font-weight: 600;
+ }
+.menu,
+ #menu-hamburgesa{
+    display: none;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gray);
+    
+ }
+
+
+#hero{
+display: flex;
+justify-content: space-between;
+max-width: 1200px;
+padding: 50px;
+width: 100%;
+gap: 50px;
+
+}
+.text h1 { 
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    color: #ffffff83;
+    font-size:xx-large;
+}
+.text p{
+    font-size: x-large;
+}
+.text span{
+    font-size: large;
+}
+.text img{
+ height: 100%;
+ width: 100%;
+}
+ .foto-local img{
+    height: 400px;
+    width: 400px;
+}
+
+#about{
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+#about h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+.container{
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.info-benef{
+    width: 300px;
+    height: 300px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #d3dbeb;
+    border-radius: 10px;
+    gap: 20px;
+    
+}
+
+.info-benef h3{
+    font-weight: 600;
+    font-size: 18px;
+    
+
+}
+.info-benef p{
+    font-size: 15px;
+    font-weight: 700;
+    color: #020202;
+}
+
+#cards{
+    max-width: 1200px;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: 50px;
+    padding-bottom: 100px;
+}
+#cards h3{
+    font-size: 30px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+.catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.catalogo-indiv{
+    width: 262px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    gap: 5px;
+    border: 2px solid black;
+    background-color: var(--bg-white);
+
+
+}
+.catalogo-indiv img{
+   
+    height: 130px;
+   
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 55%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+.price button{
+    cursor: pointer;
+}
+.catalogo-indiv img{
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form label{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-labels{
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.footer-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+    text-align: center;
+}
+.footer-nav ul li a{
+    color: black;
+}
+footer h4{
+    text-align: center;
+    color: black;
+}
